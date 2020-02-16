@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long int n,k;
+    cin>>n>>k;
+    long long int arr[n];
+    for(long long int i=0;i<n;++i)
+        cin>>arr[i];
+    long long int c=0;
+    for(long long int i=0;i<n;++i)
+        for(long long int j=1;j<n;++j)
+        {
+            if(abs(arr[i]-arr[j])==k && i!=j && i<j)
+                c++;
+        }
+    cout<<c;
+    
+    return 0;
+}

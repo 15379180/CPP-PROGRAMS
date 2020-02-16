@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long int  t1,t2,n;
+    cin>>t1>>t2>>n;
+    long long int t[n];
+    for(int i=1;i<n+1;++i)
+    {
+        t[1]=t1;
+        t[2]=t2;
+
+        t[i+2]=t[i]+pow(t[i+1],2);
+
+    }
+
+    cout<<t[n];
+    return 0;
+}
