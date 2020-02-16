@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s="122774499900";
+    int h[40]={};
+
+    for(int i=0;i<s.size();++i)
+        h[s[i]-48]+=1;
+
+    for(int k=0;k<40;++k)
+        cout<<h[k]<<" ";
+    return 0;
+}
